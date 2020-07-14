@@ -1,0 +1,262 @@
+/**Variables**/
+:root {
+    /*Colors*/
+
+    --base-color:#55463d;
+    --second-base-color:#382a21;
+    --font-main-color: #55463d;
+    --font-second-color: #F2D296;
+    --main-color: #9fc246;
+    --second-color:#fb6565;
+    --hover-color:#0e090263;
+
+    /*Fonts*/
+    --title-font: 'Berkshire Swash','Monotype Corsiva',cursive;
+    --headers-font:'Josefin Sans', serif;
+}
+
+/*Position*/
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_row{
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+article{
+    flex:2;
+    overflow-y: auto;
+}
+
+aside{
+    flex:1;
+    overflow-y: auto;
+}
+
+header{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+/*Boxes*/
+html{height: fit-content;}
+
+.title{
+    height:fit-content;
+    font-family: var(--title-font);
+    font-size: 28pt;
+    letter-spacing: 3px;
+    padding:20px 10px 10px 20px;
+    margin:0;
+}
+
+/*Active page*/
+.active_page{
+    border-radius:10%;
+    box-shadow: 3px -3px 3px rgba(0, 0, 0, 0.123), -3px -3px 3px rgba(0, 0, 0, 0.123);
+}
+
+.active_page a{color:var(--second-color)}
+
+
+.menu{
+    height:fit-content;
+    padding:0 0 0 30px;
+    position:-webkit-sticky;
+    position:sticky;
+    top:0;
+}
+
+.right{
+    padding:5px 0 0 0;
+    margin:0;
+    text-align: end;
+}
+
+footer{
+    height:fit-content;
+    display:flex;
+    align-items: flex-end;
+    margin:0;
+    padding:1rem;
+}
+
+.author{
+    flex:1.5;
+    margin:0 20px 0 0;
+    }
+
+.github{
+    flex:1;
+    text-align:right;
+    padding:0;
+    margin:0
+}
+
+/*Fonts*/
+h1{font-family: var(--title-font);}
+h2, h3{font-family: var(--headers-font);}
+.author{
+    line-height: 1.5rem;
+}
+
+/*Colors*/
+
+main {color:var(--font-main-color); background-color:white;}
+a{color:var(--main-color)}
+
+ul li a {color:var(--font-second-color)}
+
+.title{
+    background-color:var(--base-color);
+    color:var(--main-color);
+    }
+
+.gradient_menu{
+    background: var(--base-color);
+    background: -webkit-linear-gradient(to bottom, var(--base-color), var(--base-color), var(--second-base-color));
+    background: linear-gradient(to bottom, var(--base-color), var(--base-color), var(--second-base-color));
+}
+
+footer{
+    color:var(--font-second-color);
+    background-color:var(--second-base-color);}
+
+footer a{color:var(--second-color);
+text-decoration: none;}
+
+.github a{
+    font-size: 2rem;
+    color:var(--main-color)}
+
+.github a:hover{
+    color:var(--second-color)
+}
+
+/*Shadow*/
+.border_shadow{
+    box-shadow: 3px 6px 6px #00000016, -3px 6px 6px #00000016 ;
+}
+
+
+/* Navigator */
+.large_screen {display:none;}
+
+.navigator ul {
+    list-style:none;
+    display:flex;
+    align-items: flex-end;
+   }
+
+.navigator ul li {
+    position:relative;
+    float:left;
+}
+   
+/*  Items*/
+
+/*      Home*/
+#home_button{border: none;}
+#home_button a{padding-bottom:0; padding:0}
+
+/*      links */
+.navigator ul a {
+    display:block;
+    text-decoration:none;
+    letter-spacing:1px;
+    padding:5px 5px 5px 5px;
+}
+
+/*  Dropdown */
+.navigator ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    border-radius: 5%;
+}
+/*      Active dropdaw*/
+.navigator ul li:hover > ul {display:block; }
+   
+/*      Links */
+.navigator ul ul a {
+    line-height:120%;
+    width:100px;
+    padding:10px;
+}
+/*  Efects*/
+.navigator ul li:hover { 
+    border-radius:10%; 
+    background:var(--hover-color);}
+
+.navigator ul li a:hover {color:var(--second-color);}
+
+/*Responsive Design*/
+@media (min-width:800px){ 
+    /*Boxes*/
+    /* .content{height: 80vh;} */
+    .right{padding: 0.5rem 1rem 0 0;}
+
+    /*Navigator*/
+    .large_screen{display:block;}
+
+    #more_button{display:none;}
+
+    #home_button{display:block;text-align: center;padding:0;margin:0}
+    #home_button p{font-size: 12pt; padding:0 0 5px 0; margin:0}
+    .navigator{padding:0 0 5px 0}
+
+    /*footer*/
+    footer{padding:1rem 2rem 1rem 2rem;}
+
+    /*Scroll*/
+    ::-webkit-scrollbar {width: 0.5rem;}
+
+    ::-webkit-scrollbar-thumb:hover{background:var(--main-color); border-radius: 1rem;}
+    ::-webkit-scrollbar-track:hover, ::-webkit-scrollbar-track:active {
+        background: #ccd0d8;
+        border-radius: 1rem;
+        box-shadow: inset 3px 0 6px rgba(77, 76, 76, 0.472);
+    }
+}
+
+
+
+
+
+/* Por hacer:
+- Modificar los scroll [Ok]
+    - Poner el hover con sombras [OK]
+- Escoger los colores [OK]
+- Poner sombras [OK]
+- Poner el archivo de JavaScript[]
+- Poner hight max del main = hight article []
+- Poner github [OK]
+- Poner comentarios [Ok]
+    - Modificar apariencia [OK]
+- Escoger efecto hover [Ok]
+- Arreglar el menú despleglabe [Ok]
+- Poner títulos [OK]
+- Escoger fuentes [OK]
+*/
+
+/*Notas
+
+- El tema que mas me cuadra es el del huerto.*/
+
+/* Íconos interesantes
+☖ - House: &#8962;
+☗ - Black Shogi Piece: &#9751; 
+Ⱖ - Glagolitic Capital Letter Yo: &#11302;
+☰ - Trigram for Heaven:&#9776;
+*/
+
+/* Fuentes
+font-family: 'Berkshire Swash', cursive;
+*/
