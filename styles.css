@@ -62,12 +62,12 @@ html{height: fit-content;}
     box-shadow: 3px -3px 3px rgba(0, 0, 0, 0.123), -3px -3px 3px rgba(0, 0, 0, 0.123);
 }
 
-.active_page a{color:var(--second-color)}
+.active_page a{color:var(--main-color)}
 
 
 .menu{
     height:fit-content;
-    padding:0 0 0 30px;
+    padding:10px 0 0 30px;
     position:-webkit-sticky;
     position:sticky;
     top:0;
@@ -112,11 +112,6 @@ main {color:var(--font-main-color); background-color:white;}
 a{color:var(--main-color)}
 
 ul li a {color:var(--font-second-color)}
-
-.title{
-    background-color:var(--base-color);
-    color:var(--main-color);
-    }
 
 .gradient_menu{
     background: var(--base-color);
