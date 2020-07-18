@@ -47,15 +47,6 @@ header{
 /*Boxes*/
 html{height: fit-content;}
 
-.title{
-    height:fit-content;
-    font-family: var(--title-font);
-    font-size: 28pt;
-    letter-spacing: 3px;
-    padding:20px 10px 10px 20px;
-    margin:0;
-}
-
 /*Active page*/
 .active_page{
     border-radius:10%;
@@ -100,16 +91,20 @@ footer{
 }
 
 /*Fonts*/
-h1{font-family: var(--title-font);}
-h2, h3{font-family: var(--headers-font);}
-.author{
-    line-height: 1.5rem;
+h1, h2, h3{font-family: var(--title-font);}
+h2, h3{
+    font-family: var(--title-font);
+    letter-spacing: 2px;
+    font-size: 18pt;
+
 }
+.author{line-height: 1.5rem;}
+p{font-size: 14pt;}
 
 /*Colors*/
 
 main {color:var(--font-main-color); background-color:white;}
-a{color:var(--main-color)}
+a{color:var(--main-color); text-decoration: none;}
 
 ul li a {color:var(--font-second-color)}
 
@@ -123,8 +118,9 @@ footer{
     color:var(--font-second-color);
     background-color:var(--second-base-color);}
 
-footer a{color:var(--second-color);
-text-decoration: none;}
+footer a{
+    color:var(--second-color);
+    text-decoration: none;}
 
 .github a{
     font-size: 2rem;
@@ -221,8 +217,73 @@ text-decoration: none;}
     }
 }
 
+/*Index*/
 
+/*  Title*/
+.container_title{text-align: center; margin-bottom:70px;}
+.title{
+    height:fit-content;
+    font-family: var(--title-font);
+    font-size: 28pt;
+    letter-spacing: 3px;
+    padding:20px 10px 10px 20px;
+}
+.notes{font-size: small}
 
+/*  Tabs*/
+.container_tabs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex:auto;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:0;
+}
+.tab{
+    height: 244px;
+    width: 280px;
+    padding:0;
+    margin:0 5px 15px 5px;
+    overflow-y: hidden;
+}
+
+.tab h3{
+    margin:0;
+    padding:1rem;
+    color:var(--font-second-color);
+    background-color: var(--base-color);
+    text-align: center;
+}
+
+.tab .paragraph{
+    padding:15px;
+    background-color: #d3ec93e3;
+    height: 244px;
+    position:relative;
+    top:-191px;
+    display:none;
+    text-align: justify;
+    animation:slideInUp;
+    animation-duration: 0.6s;
+    line-height: 1.5rem;
+    overflow-y: auto;
+}
+
+.tab .paragraph a{
+    font-size: 1.5rem;
+    color: var(--second-color);
+    position:relative;
+    bottom:20px;
+    left:220px;
+}
+
+.tab:hover{
+    box-shadow: 3px 3px 6px #55463da4, -3px -3px 6px #55463da4;
+}
+
+.tab:hover > .paragraph{ display: block;
+}
 
 
 /* Por hacer:

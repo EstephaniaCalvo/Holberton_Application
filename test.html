@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link href="test.css" rel="stylesheet">
+    <style>
+        .mySlides {display:none;}
+        .w3-content{padding: 20px; background-color: brown;}
+        .container{padding:30px; background-color:cadetblue;}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="w3-content w3-section" style="max-width:500px">
+            <img class="mySlides" src="https://cdn.pixabay.com/photo/2017/08/06/11/08/table-2591362_960_720.jpg">
+            <img class="mySlides" src="https://cdn.pixabay.com/photo/2012/10/11/03/39/greenhouse-60830_960_720.jpg">
+            <img class="mySlides" src="https://cdn.pixabay.com/photo/2020/05/17/08/33/garden-5180550_960_720.jpg">
+        </div>
+    </div>
+    
+    <script>
+        var myIndex = 0;
+    //   carousel();
+        
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+        };
+
+        var tabs=document.getElementsByClassName("w3-content");
+        var tab1=tabs[0];
+        tab1.addEventListener("mouseover", function(){
+            carousel();
+        });
+
+        var out=document.getElementsByClassName("container");
+        var out1=out[0];
+        out1.addEventListener("mouseover", function(){
+            var j;
+            var x = document.getElementsByClassName("mySlides");
+            for (j = 0; j < x.length; j++) {
+                x[j].style.display = "none";  
+            };
+            console.log(out1);
+        });
+        
+    </script>
+</body>
+</html>

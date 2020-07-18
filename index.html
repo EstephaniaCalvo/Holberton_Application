@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mi Huerta</title>
+
+    <!-- Stylesheets -->
+    <link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <!-- Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+    <!-- Script -->
+    <script src="behavior.js"></script>
+    
+
+</head>
+<body class=" flex_column works_on_smartphone">
+    
+    <header class="menu border_shadow gradient_menu">
+        <div class="right">
+            <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2F34.201.69.79&layout=button&size=small&width=89&height=20&appId" width="89" height="20" style="border:none;overflow:hidden" allow="encrypted-media"></iframe>
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js"></script>
+        </div>
+
+        <nav class="navigator">
+            <ul>
+                <li id="home_button" class="active_page logo"><a href="index.html">&#11302;<p class="large_screen">Home</p></a></li>
+                <li class="current_page"><a href="tweets.html">Redes</a></li>
+                
+                <!-- Dropdwon -->
+                <li id="more_button"><a href="#">&#9776;</a>
+                    <ul class="border_shadow gradient_menu">
+                        <li><a href="espacios.html">Espacios</a></li>
+                        <li><a href="estructuras.html">Estructuras</a></li>
+                        <li><a href="fichas.html">Fichas</a></li>
+                        <li><a href="creditos.html">Créditos</a></li>
+                    </ul>
+                </li>
+                <!-- End dropdwon -->
+
+                <li class="large_screen"><a href="espacios.html">Espacios</a></li>
+                <li class="large_screen"><a href="estructuras.html">Tipos</a></li>
+                <li class="large_screen"><a href="fichas.html">Fichas</a></li>
+                <li class="large_screen"><a href="creditos.html">Créditos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" class="flex_row content border_shadow">
+
+        <article>
+            <div id="article">
+                <div class="container_title">
+                    <h1 class="title">Mi Huerta</h1>
+                    <p class="notes">Apuntes para empezar un huerto urbano en Cali, Colombia.</p>
+                </div>
+                
+                <div class="container_tabs">
+                    <div class="tab">
+                        <h3 class="gradient_menu">Espacios</h3>
+                        <div class="image_holder">
+                            <img src="https://cdn.pixabay.com/photo/2016/11/21/15/09/apartments-1845884_960_720.jpg">
+                        </div>
+                        <div class="paragraph">
+                            <p>
+                                No hay que tener un terreno ni un patio enorme para tener una huerta, 
+                                es más si tienes una ventana o un balcón ya tienes tu espacio ideal, 
+                                lo importante es... 
+                            </p>
+                            <a href="espacios.html" alt="mas" title="Ir a Espacios">&#10148;</a>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <h3 class="gradient_menu">Estructuras</h3>
+                        <div class="image_holder">
+                            <img src="https://cdn.pixabay.com/photo/2015/09/10/07/57/garden-934189_960_720.jpg">
+                        </div>
+                        <div class="paragraph">
+                            <p>
+                                Hay varios estructuras para orginazar las huertas, las cuales se pueden
+                                dividir entre estructuras horizontales y estructuras verticales. La
+                                estructura a utilizar... 
+                            </p>
+                            <a href="estructuras.html" alt="mas" title="Ir a Estructuras">&#10148;</a>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <h3 class="gradient_menu">Fichas de cultivo</h3>
+                        <div class="image_holder">
+                            <img src="https://image.freepik.com/foto-gratis/jardinero-sexo-femenino-sexo-masculino-que-cuida-almacigos-cajon_23-2148165290.jpg">
+                        </div>
+                        <div class="paragraph">
+                            <p>
+                                Antes empezar a sembrar debes consultar la ficha de cultivo de la 
+                                hortliza que deseas sembrar, de esta manera te asegurarás que puedes ...
+                            </p>
+                            <a href="fichas.html" alt="mas" title="Ir a Fichas de cultivo">&#10148;</a>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <h3 class="gradient_menu">Redes</h3>
+                        <div class="image_holder">
+                            <img src="https://image.freepik.com/foto-gratis/jardineros-que-examinan-plantas_23-2147768576.jpg">
+                        </div>
+                        <div class="paragraph">
+                            <p>
+                                En youtube existen muchos canales especializados en huertos urbanos,
+                                en podras encontrar tutoriales y tips para empezar y mantener tu huerto,
+                                además ...
+                            </p>
+                            <a href="tweets.html" alt="mas" title="Ir a Redes">&#10148;</a>
+                        </div>
+                    </div>
+                    
+                </div>
+        </article>
+
+        <aside>
+            <!--placeholder to add comment thread later.-->
+            <div id="disqus_thread"></div>
+                <script>
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = '//holbertonl2.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </aside>
+    </main>
+
+    <footer class="border_shadow">
+        <p class="author">
+            Made by <a href="https://twitter.com/EstephaniaCalv2" target="_blank">Estephania Carvajal</a> 
+            for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a>.
+        </p>
+        <p class="github">
+            <a href="https://github.com/EstephaniaCalvo" alt="GitHub" target="_blank" title="Ir a GitHub"><i class="fab fa-github"></i></a>
+        </p>
+    </footer>
+    
+    <!--    GitHub -->
+    <script src="https://kit.fontawesome.com/fb7c78b78a.js" crossorigin="anonymous"></script>
+</body>
+</html>
