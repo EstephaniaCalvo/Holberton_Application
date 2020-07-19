@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         if (viewportWidth > 800) {
             //Article hight
             var article=document.getElementById("article");
-            heightArticle=article.offsetHeight + 120;
+            heightArticle=article.offsetHeight+150;
 
             //Main hight
             mainContent.style.height=heightArticle+"px";
@@ -29,6 +29,65 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });   
 
 
+    // Expand image
+
+    // var imageList;
+    // var imageContainer;
+    // var gallery;
+    // var button;
+    // var image;
+
+    // imageList=document.getElementsByClassName("small");
+    // imageContainer=document.getElementsByClassName("image_container")
+    // gallery=document.getElementsByClassName("gallery")
+    
+    // var index;
+
+    // var i;
+    // for (i = 0; i < imageList.length; i++) {
+
+    //     imageList[i].addEventListener("mouseover", function(){
+    //         index=i;
+    //         console.log(index)
+    //     });
+        
+    // };
+
+    
+
+    // var i;
+    // for (i = 0; i < imageList.length; i++) {
+    //     button=imageContainer[i].getElementsByTagName("i");
+    //     image=imageList[i];
+
+    //     button[0].addEventListener("click", function(){
+    //         if (image.className == "") {
+    //             image.className = "small";
+    //         } else{
+    //             image.className = "";
+    //         };
+    //         console.log(image.className)
+    //     });
+    // };
+    
+    
+    
+    // var i;
+    // for (i = 0; i < imageList.length; i++) {
+    //     imageList[i].addEventListener("mouseover", function(){
+    //         imageList[i].id="smart_thumbnail"
+    //         thumbnailElement = document.getElementById("smart_thumbnail");
+    //         thumbnailElement.addEventListener("click", function() {
+    //             if (thumbnailElement.className == "") {
+    //                 thumbnailElement.className = "small";
+    //             } else{
+    //                 thumbnailElement.className = "";
+    //             };
+    //         });
+    //     });
+    // };
+
+    
 
     // // Slideshow
     // var slideIndex = 0;

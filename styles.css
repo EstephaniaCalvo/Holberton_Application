@@ -9,6 +9,7 @@
     --main-color: #9fc246;
     --second-color:#fb6565;
     --hover-color:#0e090263;
+    --hover-light-color:#d3ec93e3;
 
     /*Fonts*/
     --title-font: 'Berkshire Swash','Monotype Corsiva',cursive;
@@ -81,6 +82,7 @@ footer{
 .author{
     flex:1.5;
     margin:0 20px 0 0;
+    text-align: left;
     }
 
 .github{
@@ -90,16 +92,20 @@ footer{
     margin:0
 }
 
-/*Fonts*/
-h1, h2, h3{font-family: var(--title-font);}
-h2, h3{
-    font-family: var(--title-font);
-    letter-spacing: 2px;
-    font-size: 18pt;
+/*Fonts and text*/
+h1, h2, h3{font-family: var(--title-font); text-align: center;}
 
+h2, h3{letter-spacing: 2px;}
+
+h2{font-size: 22pt;}
+
+h3{font-size: 18pt;}
+
+p{
+    font-size: 14pt; 
+    line-height:1.5rem;
+    text-align: justify;
 }
-.author{line-height: 1.5rem;}
-p{font-size: 14pt;}
 
 /*Colors*/
 
@@ -208,27 +214,50 @@ footer a{
 
     /*Scroll*/
     ::-webkit-scrollbar {width: 0.5rem;}
-
     ::-webkit-scrollbar-thumb:hover{background:var(--main-color); border-radius: 1rem;}
     ::-webkit-scrollbar-track:hover, ::-webkit-scrollbar-track:active {
         background: #ccd0d8;
         border-radius: 1rem;
         box-shadow: inset 3px 0 6px rgba(77, 76, 76, 0.472);
     }
+
+    .gallery::-webkit-scrollbar {height: 6px;}
+    .gallery::-webkit-scrollbar-thumb{background:var(--second-color); border-radius: 1rem;}
+    .gallery::-webkit-scrollbar-track {
+        background: var(--hover-color);
+        border-radius: 1rem;
+        box-shadow: inset 3px 0 6px rgba(77, 76, 76, 0.472);
+    }
+
 }
 
-/*Index*/
-
 /*  Title*/
-.container_title{text-align: center; margin-bottom:70px;}
+.container_title{
+    text-align: center; 
+    margin-bottom:30px; 
+    margin:0;
+    border-bottom: solid var(--hover-light-color)
+};
+    
 .title{
     height:fit-content;
     font-family: var(--title-font);
     font-size: 28pt;
     letter-spacing: 3px;
-    padding:20px 10px 10px 20px;
+    padding:10px;
+    margin:0;
 }
-.notes{font-size: small}
+.notes{
+    font-size: small;
+    text-align: center;
+}
+
+/*Index*/
+
+.subtitle{
+    padding:10px 10px 10px 20px; 
+    width: fit-content;
+}
 
 /*  Tabs*/
 .container_tabs{
@@ -238,7 +267,7 @@ footer a{
     flex:auto;
     align-items: center;
     justify-content: space-evenly;
-    margin:0;
+    margin-top:40px;
 }
 .tab{
     height: 244px;
@@ -258,7 +287,7 @@ footer a{
 
 .tab .paragraph{
     padding:15px;
-    background-color: #d3ec93e3;
+    background-color: var(--hover-light-color);
     height: 244px;
     position:relative;
     top:-191px;
@@ -285,6 +314,72 @@ footer a{
 .tab:hover > .paragraph{ display: block;
 }
 
+/*Espacios*/
+
+.text{padding:1rem;}
+
+.text .text_image{
+    display:block;
+    height: fit-content;
+    text-align:center
+}
+
+.text .text_image img{
+    margin:20px 10px 20px 10px;
+    height:400px;
+    border-radius: 1rem;
+}
+
+/*Galeria*/
+.gallery{
+    padding:0;
+    margin:20px 5px 20px 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow-x:auto;
+}
+
+.gallery img{
+    width:300px;
+    object-fit: cover;
+    height:199.98px;
+    margin:5px;
+    object-position: top;
+    border-radius:1rem;
+}
+
+/* .image_container{
+    margin:5px;
+    width: 100px;
+    height: 66.66px;
+}
+
+.image_container:hover > .expand_layer{display:block}
+
+.image_container img{
+    height:66.66px;
+    object-fit: cover;
+}
+
+.expand_layer{
+    width:100px;
+    height:66.66px;
+    background-color:var(--hover-color);
+    text-align:right;
+    display:none;
+    position:relative;
+    top:-70.66px;
+    left:0px;
+}
+.expand_layer i{
+    color:var(--main-color);
+    font-size: 18pt;
+    font-weight: 800;
+    margin:5px;   
+}
+
+.expand_layer i:hover{color:var(--second-color)} */
 
 /* Por hacer:
 - Modificar los scroll [Ok]
