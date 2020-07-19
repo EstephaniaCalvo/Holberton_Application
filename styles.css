@@ -338,6 +338,7 @@ footer a{
     flex-wrap: nowrap;
     flex-direction: row;
     overflow-x:auto;
+    align-items: center;
 }
 
 .gallery img{
@@ -347,6 +348,13 @@ footer a{
     margin:5px;
     object-position: top;
     border-radius:1rem;
+}
+
+/*Estructuras*/
+.gallery iframe{
+    width:336px;
+    height:189px;
+    margin:20px;
 }
 
 /* .image_container{
