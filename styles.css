@@ -357,6 +357,72 @@ footer a{
     margin:20px;
 }
 
+/*Fichas*/
+ul{padding-left:0px; margin-top:20px; list-style: none;}
+ul li .text{padding-left:0;}
+
+.item_list{font-size: 20pt;}
+
+.list{
+    list-style: circle;
+    margin-left:30px;
+}
+
+.list li{
+    margin-bottom:10px;
+    border-radius: 1rem;;
+}
+
+.list li p{
+    padding:10px;
+    margin:0;
+}
+
+.list li .text{
+    margin:0 0 0 10px;
+    padding:0;
+    display:none;
+}
+
+.list li:hover >p{
+    color: var(--main-color);
+}
+
+.list li:hover > .text{display:block}
+/* ol li .text{
+    display:none
+}
+
+.dropdown{
+    padding:0;
+    margin:0;
+    height: fit-content;
+    background-color: #ffffff00;
+    border:none;   
+}
+
+.dropdown p {
+    padding:5px;
+    font-family: var(--headers-font);
+    color:var(--font-main-color);
+    margin:0;
+}
+
+.dropdown:focus{
+    background-color: var(--hover-light-color);
+    outline:0;
+}
+
+.dropdown p span{font-size: 10pt;}
+
+.dropdown:hover > p span{color:var(--second-color)}
+
+
+
+.dropdown:focus > .text{
+    display:block;
+} */
+
 /* .image_container{
     margin:5px;
     width: 100px;
