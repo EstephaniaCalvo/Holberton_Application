@@ -390,6 +390,42 @@ ul li .text{padding-left:0; padding-top:0;}
 
 .list li:hover > .text{display:block}
 
+/*Creditos*/
+.small{
+    height:100px;
+    object-position: right;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+.image_large{
+    text-align: center;
+    border-radius:1rem;
+    box-shadow: 3px 3px 6px #55463da4, -3px -3px 6px #55463da4;
+    position:absolute;
+}
+
+.pulse:hover{animation:heartBeat;
+animation-duration:1s;}
+
+.credits a{ 
+    color:var(--font-main-color);
+}
+.credits li p:first-child{
+    margin:0;
+    font-size: 18pt;
+}
+
+.credits li p{
+    margin-left:20px;
+}
+.credits li div{
+    font-size:14pt;
+    margin-left:20pt;
+    padding:5px;
+}
+.credits a:hover{color:var(--second-color)}
+
 /* ol li .text{
     display:none
 }

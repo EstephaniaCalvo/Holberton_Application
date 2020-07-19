@@ -31,44 +31,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     // Expand image
 
-    // var imageList;
-    // var imageContainer;
-    // var gallery;
-    // var button;
-    // var image;
-
-    // imageList=document.getElementsByClassName("small");
-    // imageContainer=document.getElementsByClassName("image_container")
-    // gallery=document.getElementsByClassName("gallery")
-    
-    // var index;
-
-    // var i;
-    // for (i = 0; i < imageList.length; i++) {
-
-    //     imageList[i].addEventListener("mouseover", function(){
-    //         index=i;
-    //         console.log(index)
-    //     });
-        
-    // };
+    var thumbnailElement = document.getElementById("smart_thumbnail");
+    thumbnailElement.addEventListener("click", function() {
+        if (thumbnailElement.className == "image_large") {
+            thumbnailElement.title="Ver imagen completa"
+            thumbnailElement.className = "small";
+        } else{
+            thumbnailElement.title="Volver al tamaño normal"
+            thumbnailElement.className = "image_large";
+        };
+    });
 
     
-
-    // var i;
-    // for (i = 0; i < imageList.length; i++) {
-    //     button=imageContainer[i].getElementsByTagName("i");
-    //     image=imageList[i];
-
-    //     button[0].addEventListener("click", function(){
-    //         if (image.className == "") {
-    //             image.className = "small";
-    //         } else{
-    //             image.className = "";
-    //         };
-    //         console.log(image.className)
-    //     });
-    // };
     
     
     
