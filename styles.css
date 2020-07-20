@@ -252,7 +252,7 @@ footer a{
     text-align: center;
 }
 
-/*Index*/
+/*Index page*/
 
 .subtitle{
     padding:10px 10px 10px 20px; 
@@ -314,7 +314,7 @@ footer a{
 .tab:hover > .paragraph{ display: block;
 }
 
-/*Espacios*/
+/*Espacios page*/
 
 .text{padding:1rem;}
 
@@ -330,7 +330,7 @@ footer a{
     border-radius: 1rem;
 }
 
-/*Galeria*/
+/*Galeria page*/
 .gallery{
     padding:0;
     margin:20px 5px 20px 5px;
@@ -350,14 +350,14 @@ footer a{
     border-radius:1rem;
 }
 
-/*Estructuras*/
+/*Estructuras page*/
 .gallery iframe{
     width:336px;
     height:189px;
     margin:20px;
 }
 
-/*Fichas*/
+/*Fichas page*/
 ul{padding-left:0px; margin-top:20px; list-style: none;}
 ul li .text{padding-left:0; padding-top:0;}
 
@@ -390,7 +390,7 @@ ul li .text{padding-left:0; padding-top:0;}
 
 .list li:hover > .text{display:block}
 
-/*Creditos*/
+/*Creditos page*/
 .small{
     height:100px;
     object-position: right;
@@ -403,6 +403,8 @@ ul li .text{padding-left:0; padding-top:0;}
     border-radius:1rem;
     box-shadow: 3px 3px 6px #55463da4, -3px -3px 6px #55463da4;
     position:absolute;
+    top:50px;
+    left:50px;
 }
 
 .pulse:hover{animation:heartBeat;
@@ -426,91 +428,8 @@ animation-duration:1s;}
 }
 .credits a:hover{color:var(--second-color)}
 
-/* ol li .text{
-    display:none
-}
-
-.dropdown{
-    padding:0;
-    margin:0;
-    height: fit-content;
-    background-color: #ffffff00;
-    border:none;   
-}
-
-.dropdown p {
-    padding:5px;
-    font-family: var(--headers-font);
-    color:var(--font-main-color);
-    margin:0;
-}
-
-.dropdown:focus{
-    background-color: var(--hover-light-color);
-    outline:0;
-}
-
-.dropdown p span{font-size: 10pt;}
-
-.dropdown:hover > p span{color:var(--second-color)}
-
-
-
-.dropdown:focus > .text{
-    display:block;
-} */
-
-/* .image_container{
-    margin:5px;
-    width: 100px;
-    height: 66.66px;
-}
-
-.image_container:hover > .expand_layer{display:block}
-
-.image_container img{
-    height:66.66px;
-    object-fit: cover;
-}
-
-.expand_layer{
-    width:100px;
-    height:66.66px;
-    background-color:var(--hover-color);
-    text-align:right;
-    display:none;
-    position:relative;
-    top:-70.66px;
-    left:0px;
-}
-.expand_layer i{
-    color:var(--main-color);
-    font-size: 18pt;
-    font-weight: 800;
-    margin:5px;   
-}
-
-.expand_layer i:hover{color:var(--second-color)} */
-
-/* Por hacer:
-- Modificar los scroll [Ok]
-    - Poner el hover con sombras [OK]
-- Escoger los colores [OK]
-- Poner sombras [OK]
-- Poner el archivo de JavaScript[]
-- Poner hight max del main = hight article []
-- Poner github [OK]
-- Poner comentarios [Ok]
-    - Modificar apariencia [OK]
-- Escoger efecto hover [Ok]
-- Arreglar el menú despleglabe [Ok]
-- Poner títulos [OK]
-- Escoger fuentes [OK]
-*/
 
 /*Notas
-
-- El tema que mas me cuadra es el del huerto.*/
 
 /* Íconos interesantes
 ☖ - House: &#8962;
